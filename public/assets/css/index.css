@@ -29,6 +29,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .temp-banner {
@@ -1627,22 +1628,23 @@ a {
   opacity: 0;
 }
 
-.owl-carousel-area .item:hover .owl-carousel-area .item .text-content {
+.owl-carousel-area .item:hover .text-content {
+  transition: all 1s;
   opacity: 1;
 }
 
-.owl-carousel-diem-manh .item1 {
+.owl-carousel-diem-manh .item {
   overflow: hidden;
   border-radius: 15px;
 }
 
-.owl-carousel-diem-manh .item1 .content {
+.owl-carousel-diem-manh .item .content {
   position: absolute;
   z-index: 2;
   text-align: center;
 }
 
-.owl-carousel-diem-manh .item1::after {
+.owl-carousel-diem-manh .item::after {
   content: '';
   position: absolute;
   background: #00254e;
@@ -1654,20 +1656,19 @@ a {
   border-radius: 15px;
 }
 
-.owl-carousel-diem-manh .item1 .corner {
+.owl-carousel-diem-manh .item:hover::after {
+  transition: all 0.5s;
+  background-color: #e74822 !important;
+}
+
+
+.owl-carousel-diem-manh .item .corner {
   position: absolute;
   top: 5px;
   right: 5px;
   z-index: 2;
 }
 
-.owl-carousel-diem-manh .item1:hover *::after {
-  background-color: #00254e !important;
-}
-
-.owl-carousel-diem-manh .item1:hover .owl-carousel-diem-manh .item1 .corner {
-  display: none;
-}
 
 
 
@@ -1676,7 +1677,16 @@ a {
   clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
 }
 
-.owl-carousel-blog .icon {
+.owl-carousel .owl-item img {
   max-width: 100%;
   width: auto !important;
 }
+/* .owl-carousel-blog .icon {
+  max-width: 100%;
+  width: auto !important;
+}
+.owl-carousel-value .owl-item img {
+  max-width: 100%;
+  width: auto !important;
+} */
+
