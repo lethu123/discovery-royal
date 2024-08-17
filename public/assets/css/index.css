@@ -1586,6 +1586,9 @@ a {
   border-radius: 0;
   animation: smooth-appear 0.3s ease forwards;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */
@@ -1621,6 +1624,11 @@ a {
   width: 100%;
   height: 100%;
   z-index: 0;
+  opacity: 0;
+}
+
+.owl-carousel-area .item:hover .owl-carousel-area .item .text-content {
+  opacity: 1;
 }
 
 .owl-carousel-diem-manh .item1 {
