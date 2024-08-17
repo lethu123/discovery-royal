@@ -1653,7 +1653,7 @@ a {
   z-index: 2;
 }
 
-.owl-carousel-diem-manh .item1:hover .owl-carousel-diem-manh .item1::after {
+.owl-carousel-diem-manh .item1:hover *::after {
   background-color: #00254e !important;
 }
 
